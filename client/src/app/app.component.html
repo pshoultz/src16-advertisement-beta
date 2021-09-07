@@ -1,0 +1,14 @@
+<script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
+
+<clr-alert [clrAlertAppLevel]="true">
+  <clr-alert-item>
+    <span class="alert-text">
+      Congratulations, you have installed Clarity!
+    </span>
+  </clr-alert-item>
+</clr-alert>
+
+<button class="btn btn-primary" (click)="showAds()">Click</button>
+<img src="{{currentImage}}">
+
+<router-outlet></router-outlet>
