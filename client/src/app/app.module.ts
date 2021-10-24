@@ -8,13 +8,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CmsComponent } from './cms/cms.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AlertComponent } from './alert/alert.component';
+import { AttractComponent } from './attract/attract.component';
+import { CmsAddImageComponent } from './cms-add-image/cms-add-image.component';
+import { CmsEditImageComponent } from './cms-edit-image/cms-edit-image.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CmsComponent,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    AlertComponent,
+    AttractComponent,
+    CmsAddImageComponent,
+    CmsEditImageComponent
   ],
   imports: [
     BrowserModule,
