@@ -9,12 +9,12 @@ const routes: Routes = [
     { 
         path: 'cms', 
         component: CmsComponent,
-        children: [
-            {
-                path: 'addImage', 
-                component: CmsAddImageComponent,
-            },
-        ],
+        //children: [
+        //    {
+        //        path: 'addImage', 
+        //        component: CmsAddImageComponent,
+        //    },
+        //],
     },
 ];
 
