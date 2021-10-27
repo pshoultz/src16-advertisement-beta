@@ -9,5 +9,9 @@ func Start() {
 			"message": "pong",
 		})
 	})
+
+	r.POST("/addimage", func(c *gin.Context) {
+		c.JSON(200, gin.H{})
+	})
 	r.Run() // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
 }
