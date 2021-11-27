@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/pshoultz/tji1498a/api/router"
+	"github.com/pshoultz/src16-advertisment-beta/api/router"
 )
 
 func main() {

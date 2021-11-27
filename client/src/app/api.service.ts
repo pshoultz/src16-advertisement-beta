@@ -9,21 +9,22 @@ import { catchError, retry } from 'rxjs/operators';
 
 export class ApiService {
 
-    constructor(private http: HttpClient) { 
+    private baseRoute: string;
 
+    constructor(private http: HttpClient) { 
+        this.baseRoute = "http://localhost:8080";
     }
 
     //NOTE: use this to bring in json file for configuration
     ngOnInit() {
-        //this.testRoute();
     }
 
-    //testRoute(): Observable<any> {
-    //    return this.get("localhost:8080/ping");
-    //}
+    testRoute(): Observable<any> {
+        return this.http.get(this.baseRoute + "/ping");
+    }
 
     addImage() {
-        //return this.http.post("localhost:8080/addimage"
+        //return this.http.post("localhost:8080/addimage");
     }
 
 }
